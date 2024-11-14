@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동화약품 메인페이지</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f091d12e6a.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="bottom">
+            <div class="b_top ">
+                <div class="gnb">
+                    <div class="gnb_logo">
+                        <p class="logo_white"><a href="#"></a></p>
+                        <p class="title_white"><a href="#">동화약품</a></p>
+                    </div>
+
+                    <ul class="gnb_list">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">제품소개</a></li>
+                        <li><a href="#">연구개발</a></li>
+                        <li><a href="#">미디어</a></li>
+                        <li><a href="#">IR자료</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                    </ul>
+                    <ul class="gnb_info">
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">고객센터<span><i class="fa-solid fa-chevron-down"></i></span></a></li>
+                        <li><a href="#">KR<span><i class="fa-solid fa-chevron-down"></i></span></a></li>
+                    </ul>
+                    <div class="gnb_icons">
+                        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                        <p class="top_bar"><i class="fa-solid fa-bars"></i></p>
+                    </div>
+                </div>
+
+                <div class="gnb_subAll">
+                    <div class="gnb_sub gnb_sub01">
+                        <ul>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">CI</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">사가</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">브로슈어</a></li>
+                            <li><a href="#">연구소/공장</a></li>
+                            <li><a href="#">가족친화우수기업</a></li>
+                            <li><a href="#">환경경영</a></li>
+                            <li><a href="#">가족회사</a></li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="gnb_sub gnb_sub02 ">
+                        <ul>
+                            <li><a href="#">제품 공지사항</a></li>
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">전문의약품</a></li>
+                            <li><a href="#">일반의약품</a></li>
+                            <li><a href="#">의약외품 . 기타</a></li>
+                            <li><a href="#">건강기능식품</a></li>
+                            <li><a href="#">식품.음료</a></li>
+                            <li><a href="#">화장품</a></li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="gnb_sub gnb_sub03">
+                        <ul>
+                            <li><a href="#">R&D 소개</a></li>
+                            <li><a href="#">연구성과</a></li>
+                            <li><a href="#">조직 및 업무</a></li>
+                            <li><a href="#">중점 연구분야</a></li>
+                            <li><a href="#">주요 연구과제</a></li>
+                            <li><a href="#">기술혁신 네트워크</a></li>
+                            <li><a href="#">글로벌 협력</a></li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="gnb_sub gnb_sub04">
+                        <ul>
+                            <li><a href="#">동화뉴스</a></li>
+                            <li><a href="#">광고갤러리</a></li>
+                            <li><a href="#">뉴스레터</a></li>
+                            <li><a href="#">동화캐릭터</a></li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="gnb_sub gnb_sub05">
+                        <ul>
+                            <li><a href="#">공시</a></li>
+                            <li><a href="#">사업보고서</a></li>
+                            <li><a href="#">전자공고</a></li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="gnb_sub gnb_sub06">
+                        <ul>
+                            <li><a href="#">국민생활건강 캠페인</a></li>
+                            <li><a href="#">국민생활건강 프로젝트</a></li>
+                            <li><a href="#">공생 캠페인</a></li>
+                            <li><a href="#">맑은바람 캠페인</a></li>
+                            <li><a href="#">또 하나의 마을 만들기</a></li>
+                        </ul>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section">
+        <div id="gnb_modal">
+            <p>x</p>
+            <div class="move_img"></div>
+            <ul class="modal01">
+                <li class="modal01_on">회사소개</li>
+                <li>연구개발</li>
+                <li>제품정보</li>
+                <li>윤리경영</li>
+                <li>IR자료실</li>
+                <li>사회공헌</li>
+                <li>채용정보</li>
+                <li>미디어센터</li>
+                <li>고객지원</li>
+            </ul>
+            <div class="modal02">
+                <ul class="modal02_on  g_float">
+                    <li>인사말</li>
+                    <li>CI</li>
+                    <li>연혁</li>
+                    <li>사가</li>
+                    <li>광고북/브로슈어</li>
+                    <li>연구소/공장</li>
+                    <li>가족친화우수기업</li>
+                    <li>환경경영</li>
+                    <li>오시는길</li>
+                    <li>기업이념</li>
+
+                    <li>가족회사</li>
+                    <li>활명수이야기</li>
+                    <li>기네스북 등재</li>
+                    <li>서울연통부 기념비</li>
+                    <li>보당 송덕비</li>
+                    <li>가송재단</li>
+                </ul>
+                <ul>
+                    <li>R&D소개</li>
+                    <li>연구성과</li>
+                    <li>조직 및 업무</li>
+                    <li>중점 연구분야</li>
+                    <li>주요 연구분야</li>
+                    <li>주요연구과제</li>
+                    <li>기술혁신 네트워크</li>
+                    <li>글로벌 동화</li>
+                </ul>
+                <ul>
+                    <li>제품 공지사항</li>
+                    <li>신제품</li>
+                    <li>전문의약품</li>
+                    <li>일반의약품</li>
+                    <li>의약외품/기타</li>
+                    <li>건강기능식품</li>
+                    <li>식품/음료</li>
+                    <li>화장품</li>
+                    <li>제품검색</li>
+                    <li>판매처찾기</li>
+                </ul>
+                <ul>
+                    <li>대표이사 메시지</li>
+                    <li>윤리강령</li>
+                    <li>자율준수(CP)</li>
+                    <li>부패방지방침</li>
+                    <li>관련사이트</li>
+                    <li>사이버 제보센터</li>
+                </ul>
+                <ul>
+                    <li>공시</li>
+                    <li>사업보고서</li>
+                    <li>전자공고</li>
+                </ul>
+                <ul>
+                    <li>국민생활건강 캠페인</li>
+                    <li>국민생활건강 프로젝트</li>
+                    <li>공생 캠페인</li>
+                    <li>맑은바람 캠페인</li>
+                    <li>또 하나의 마을 만들기</li>
+                </ul>
+                <ul>
+                    <li>공지사항</li>
+                    <li>인재상</li>
+                    <li>인사제도</li>
+                    <li>복리후생</li>
+                    <li>채용안내</li>
+                    <li>상시채용</li>
+                    <li>지원결과 확인</li>
+                    <li>자주하는 질문</li>
+                    <li>채용 Q&A</li>
+                    <li>채용서류 반환 고지</li>
+                </ul>
+                <ul>
+                    <li>동화뉴스</li>
+                    <li>광고갤러리</li>
+                    <li>뉴스레터</li>
+                    <li>동화캐릭터</li>
+                </ul>
+                <ul>
+                    <li>고객아이디어</li>
+                    <li>고객의소리</li>
+                    <li>개인정보 처리방침</li>
+                    <li>사이트맵</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <ul class="indicator">
+            <li><a href="#move01" class="in_on"></a></li>
+            <li><a href="#move02"></a></li>
+            <li><a href="#move03"></a></li>
+            <li><a href="#move04"></a></li>
+            <li><a href="#move05"></a></li>
+            <li><a href="#move06"></a></li>
+        </ul>
+        <div class="main move" id="move01">
+            <div class="main_back">
+                <div class="main_banner brand01">
+                    <div class="main_text">
+                        <h1>좋은 약으로<br> 소비자에게 봉사하다.</h1>
+                        <p>고객의 안전과 건강 최우선의 기업정신으로</p>
+                        <p>고객의 행복을 추구합니다.</p>
+                    </div>
+                </div>
+                <div class="main_banner brand02">
+                    <div class="main_text">
+                        <h1>가족친화 우수기업</h1>
+                        <p>시공간초월근무제(AAFW) 실행으로</p>
+                        <p>일과 가정 모두를 책임집니다.</p>
+                    </div>
+                </div>
+                <div class="main_banner brand03">
+                    <div class="main_text">
+                        <h1>대한민국<br>최초 제약 기업</h1>
+                        <p>환경적으로 건전하고</p>
+                        <p>지속 가능한 발전을 도모합니다.</p>
+                    </div>
+                </div>
+                <div class="main_banner brand04">
+                    <div class="main_text">
+                        <h1>직원의 가치 존중</h1>
+                        <p>직원 개개인이 회사의 주인이라는</p>
+                        <p>신뢰와 믿음을 바탕으로</p>
+                        <p>고객 한분 한분께 다가섭니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_btn">
+                <p class="left_main_btn"><i class="fa-solid fa-angle-left"></i></p>
+                <p class="right_main_btn"><i class="fa-solid fa-angle-right"></i></p>
+            </div>
+
+            <div class="top_btn"><i class="fa-solid fa-chevron-up"></i></div>
+            <ul class="main_page ">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="brand move" id="move02">
+            <div class="brand_text">
+                <h5>OUR BRAND</h5>
+                <h1>대표 브랜드 소개</h1>
+                <p>빠르게 변화하는 국내외 약업계 시장 변화에</p>
+                <p>능동적이고 적극적으로 대처해 나가는 방향으로</p>
+                <p>개발전략을 수립하였습니다.</p>
+            </div>
+
+            <div class="brand_btn" id="brand_btn">
+                <p class="left_brand_btn">PREV</p>
+                <p class="right_brand_btn">NEXT</p>
+            </div>
+            <ul class="brand_backAll">
+                <li class="brandBack01"></li>
+                <li class="brandBack02"></li>
+                <li class="brandBack03"></li>
+                <li class="brandBack04"></li>
+                <li class="brandBack05"></li>
+            </ul>
+            <ul class="brand_back">
+                <li class="back04">
+                    <div class="brand_text02">
+                        <span>미리보기</span>
+                        <span class="card_num">05</span>
+                        <img src="images/brand/bra_11.png" alt="활명수">
+                        <h3>활명수</h3>
+                        <h4>소화기관용약</h4>
+                        <p>식욕감퇴(식욕부진), 위부팽만감, 소화불량, 과식<br>
+                            체함, 구역, 구토<br>
+                            병중병후 : 병을 앓는 동안이나 회복후
+                        </p>
+                    </div>
+                </li>
+                <li class="back02 ">
+                    <div class="brand_text02">
+                        <span>미리보기</span>
+                        <span class="card_num">01</span>
+                        <img src="images/brand/bra_04.png" alt="잇치">
+                        <h3>잇치</h3>
+                        <h4>잇몸질환/구내염 치료제</h4>
+                        <p>치은염(잇몸염)ㆍ치조(이틀)농루에 의한 증상<br>
+                            잇몸의 발적(충혈되어 붉어짐)<br>
+                            부기ㆍ출혈ㆍ고름 등의 완화
+                        </p>
+                    </div>
+                </li>
+                <li class="back03">
+                    <div class="brand_text02">
+                        <span>미리보기</span>
+                        <span class="card_num">02</span>
+                        <img src="images/brand/bra_07.png" alt="쌍화탕">
+                        <h3>쌍화탕</h3>
+                        <h4>자양강장제</h4>
+                        <p>허약체질, 피로회복, 과로, 자한, 병중병후<br>
+                            자한(自汗) : 이유 없이 땀이 남<br>
+                            병중병후 : 병을 앓는 동안이나 회복후
+                        </p>
+                    </div>
+                </li>
+                <li class="back01 ">
+                    <div class="brand_text02">
+                        <span>미리보기</span>
+                        <span class="card_num">03</span>
+                        <img src="images/brand/bra_03.png" alt="후시딘">
+                        <h3>후시딘</h3>
+                        <h4>피부외용제</h4>
+                        <p>후시딘연고(퓨시드산나트륨) 5g/10g<br>
+                            점도가 높은 연고 제형 <br>
+                            상처부위를 잘 덮어 건조감 방지
+                        </p>
+                    </div>
+                </li>
+                <li class="back05">
+                    <div class="brand_text02">
+                        <span>미리보기</span>
+                        <span class="card_num">04</span>
+                        <img src="images/brand/bra_01-1.png" alt="판콜">
+                        <h3>판콜<span>S</span></h3>
+                        <h4>감기약</h4>
+                        <p>감기의 제증상, 콧물, 코막힘, 재채기, 기침, 인후통, <br>
+                            가래, 오한(춥고 떨리는 증상), 발열, 두통, <br>
+                            관절통, 근육통의 완화
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- -------------------------new_product------------------------------------ -->
+
+        <div class="new_product move" id="move03">
+            <div class="left_new_text">
+                <h5>NEW PRODUCT</h5>
+                <!-- <p>동화제약</p> -->
+                <h1>신제품</h1>
+            </div>
+
+            <ul class="new_photos">
+                <li class="new_photoOn"><img src="images/new/new_01.png" alt="배러화이트"></li>
+                <li><img src="images/new/new_06.png" alt="배러라이트"></li>
+                <li><img src="images/new/new_05.png" alt="활짝"></li>
+                <li><img src="images/new/new_04.png" alt="포에너지"></li>
+                <li><img src="images/new/new_03.png" alt="쿠에티아핀정"></li>
+                <li><img src="images/new/new_02.png" alt="십신탕"></li>
+            </ul>
+
+            <ul class="right_new_text">
+                <li>
+                    <h4>[식품 /음료]</h4>
+                    <p><img src="images/new/i_new_02-1.png" alt="배러화이트"></p>
+                    <h3><a href="#">환하게 빛나는 배러화이트 <span>Better White</span></a></h3>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <h4>[식품 /음료]</h4>
+                    <p><img src="images/new/i_new_02-1.png" alt="배러라이트"></p>
+                    <h3><a href="#">환하게 시원하게 비우는 배러라이트 <sapn>Better Light</span></a></h3>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <h4>[일반의약품]</h4>
+                    <p><img src="images/new/i_new_01-1.png" alt="활짝정"></p>
+                    <h3><a href="#">활짝정 <span>WHAL MATE Tablet</span></a></h3>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <h4>[건강기능식품]</h4>
+                    <p><img src="images/new/i_new_03-1.png" alt="마그랩"></p>
+                    <h3><a href="#">마그랩 <span>MgLAB</span></a></h3>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <h4>[전문의약품]</h4>
+                    <p><img src="images/new/i_new_01-1.png" alt="에티아핀정"></p>
+                    <h3><a href="#">동화쿠에티아핀정 <span>25mg, 100mg, 200mg, 300mg</span></a></h3>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <h4>[일반의약품]</h4>
+                    <p><img src="images/new/i_new_02-1.png" alt="십신탕"></p>
+                    <h3><a href="#">부채표 십신탕 <span>SIBSINTANG Solution</span></a></h3>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- -------------------------media------------------------------------ -->
+
+        <div class="media move" id="move04">
+            <div class="media_name">
+                <img src="images/media/n_logo_wh.png" alt="logo_whith">
+                <p>DONGWHA MEDIA</p>
+            </div>
+            <div class="left_media_text">
+                <h5>NEW MEDIA</h5>
+                <h1>동화 미디어</h1>
+            </div>
+            <ul class="left_media_list">
+                <li class="media_on01">
+                    <p>일반의약품</p>
+                    <h2>감기시작했다 <span id="media_point">판콜</span>마셨다</h2>
+                    <span>2023년 09월</span>
+                </li>
+                <li>
+                    <p>건강기능식품</p>
+                    <h2>마그랩 포 에너지</h2>
+                    <span>2023년 08월</span>
+                </li>
+                <li>
+                    <p>의약외품</p>
+                    <h2>후시드 크림 플러스</h2>
+                    <span>2023년 02월</span>
+                </li>
+                <li>
+                    <p>의약외품</p>
+                    <h2>잇몸이 부었을때, 참지말고 잇치</h2>
+                    <span>2022년 01월</span>
+                </li>
+            </ul>
+            <ul class="right_media_list">
+                <li class="media_r01 media_on02">
+                    <p><video src="images/media/m03.mp4" controls muted autoplay loop></video></p>
+                </li>
+                <li class="media_r02 ">
+                    <p><video src="images/media/m02.mp4" controls muted autoplay loop></video></p>
+                </li>
+                <li class="media_r03 ">
+                    <p><video src="images/media/m01.mp4" controls muted autoplay loop></video></p>
+                </li>
+                <li class="media_r04 ">
+                    <p><video src="images/media/m04.mp4" controls muted autoplay loop></video></p>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- -------------------------news------------------------------------ -->
+        <div class="news move" id="move05">
+            <div class="left_news_text">
+                <h5>OUR NEWS</h5>
+                <h1>동화 소식</h1>
+            </div>
+            <ul class="right_news_boxes">
+                <li>
+                    <p class="news_cube01">부채표 가송재단</p>
+                    <span></span>
+                    <p class="news_cube02">
+                        부채표 가송재단–대한의학회, 제14회 윤광열 의학상
+                        ‘경북대 감염내과 김신우 교수’ 선정
+                    </p>
+                </li>
+                <li>
+                    <p class="news_cube01">셀트리온 ‘알보칠·화이투벤’ 인수</p>
+                    <span></span>
+                    <p class="news_cube02">
+                        인수 품목은 종합감기약 ‘화이투벤’, 비충혈제거제,
+                        ‘화이투벤 나잘스프레이’, 구내염 치료제 ‘알보칠’ 등..
+                    </p>
+                </li>
+                <li>
+                    <p class="news_cube01">2024 대한민국 퍼스트브랜드 대상 수상</p>
+                    <span></span>
+                    <p class="news_cube02">
+                        소비자가 직접 뽑는 '2024 대한민국 퍼스트브랜드',
+                        판콜에스, 잇치 마그랩이 대상수상
+                    </p>
+                </li>
+                <li>
+                    <p class="news_cube01">2024년 정기 임원 승진 인사</p>
+                    <span></span>
+                    <p class="news_cube02">
+                        2024년 정기 임원 승진인사 발표
+                    </p>
+                </li>
+                <li>
+                    <p class="news_cube01"> &lt;국민생활건강 캠페인&gt; 광고 - 대상</p>
+                    <span></span>
+                    <p class="news_cube02">
+                        2022년 6월부터 현재까지 진행 중인 캠페인 광고로
+                        주요 일간지 및 경제지 광고대상을 수상했다.
+                    </p>
+                </li>
+                <li>
+                    <p class="news_cube01">판콜, 광고 부문 최우수상 수상</p>
+                    <span></span>
+                    <p class="news_cube02">
+                        데일리팜이 주최한 제11회 제약바이오산업 광고 ·
+                        PR대상에서 TV·CF 광고 부문 최우수상을 수상했다.
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <!-- -------------------------network------------------------------------ -->
+
+        <div class="network move " id="move06">
+            <div class="top_network_text">
+                <h1>기술혁신 네트워크</h1>
+                <p>동화약품 연구소는 혁신 신약과 제품 개발 역량을 확보하기 위해 </p>
+                <span>AI 기업, 대학, 병원 등과 다양한 네트워크 구축 및 공동연구를 활발히 수행하고 있습니다.</span>
+            </div>
+            <div class="bottom_network_icons">
+                <ul class="network01 marquee">
+                    <li><img src="images/net/h01.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h02.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h04.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h05.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h06.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h01.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h02.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h04.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h05.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h06.jpg" alt="network logo"></li>
+                </ul>
+
+                <ul class="network02">
+                    <li><img src="images/net/h07.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h08.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h09.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h10.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h03.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h07.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h08.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h09.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h10.jpg" alt="network logo"></li>
+                    <li><img src="images/net/h03.jpg" alt="network logo"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="left_footer_text">
+            <span><img src="images/footer/footer_13.png" alt="footer logo"></span>
+            <p>04522 서울특별시 중구 남대문로9길 24 패스트파이브 타워 6~8층</p>
+            <p>Copyright(c) DONG WHA PHARM. CO., LTD</p>
+            <p>Tel : 02-2021-9300</p>
+            <p>대표이사 : 유준하</p>
+            <p>사업자등록번호 : 110-81-00102</p>
+        </div>
+        <div class="right_footer_text">
+            <div class="quick">
+                <h4>Quick Menu</h4>
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이메인 무단수집 거부</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                </ul>
+            </div>
+            <div class="client">
+                <h4>고객지원</h4>
+                <ul>
+                    <li><a href="#">사이버 제보센터</a></li>
+                    <li><a href="#">전화 : 02-2021-9346~9(24시간)</a></li>
+                    <li><a href="#">팩스 : 02-2021-9577</a></li>
+                    <li><a href="#">E-mail : hotline@dong-wha.co.kr</a></li>
+                </ul>
+            </div>
+            <div class="site">
+                <h4>Family Site</h4>
+                <ul class="site_li">
+                    <li><img src="images/footer/footer_17.png" alt="후시딘 이미지"></li>
+                    <li><a href="#"><img src="images/footer/footer_23.png" alt="잇치 이미지"></a></li>
+                    <li><a href="#"><img src="images/footer/footer_31.png" alt="활명수 이미지"></a></li>
+                    <li><a href="#"><img src="images/footer/footer_34.png" alt="e-mall"></a></li>
+                    <li class="back_circle"><a href="#"><img src="images/footer/footer_19.png" alt="더마코스메틱"></a></li>
+                    <li class="back_circle02"><a href="#"><img src="images/footer/footer_28.png" alt="더마로션 이미지"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
