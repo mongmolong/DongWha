@@ -1,3 +1,8 @@
+$(window).on('load', function() {
+    // $('#loading').fadeOut();  
+    // $('#myImage').fadeIn();   
+});
+
 $(document).ready(function () {
     // -------------------------indicator-----------------------------
     let pos1 = $("#move01").offset().top;
@@ -151,11 +156,9 @@ $(document).ready(function () {
         }, 6000);
     
         function main_text() {
-            // 텍스트 초기화 (이전 슬라이드에서 애니메이션이 끝났다면 다시 초기화)
             $(".main_text").eq(main_list).children("h1").stop().animate({ "opacity": "0", "margin-left": "0%" });
             $(".main_text").eq(main_list).children("p").stop().animate({ "opacity": "0", "margin-left": "0%" });
     
-            // 텍스트 애니메이션 (현재 슬라이드에서)
             $(".main_text").eq(main_list).children("h1").stop().animate({ "opacity": "1", "margin-left": "14%" }, 1000);
             $(".main_text").eq(main_list).children("p").stop().animate({ "opacity": "1", "margin-left": "21%" }, 1500);
         }
@@ -182,20 +185,16 @@ $(document).ready(function () {
             }, 6000);
         });
     
-        // 화면 크기 변경
         $(window).resize(function () {
             main_wid = $(".main").width();
             main_r();
         });
     });
-    
-
 
     // ----------------------------brand---------------------
     let br_list = 0;
     let br_count = $(".brand_back>li").length;
     let br_hi = $(".brand>li").height();
-    // let br_hi = $(".brand_back>li").height();
 
     $(".left_brand_btn").click(function () {
         if (br_list == 0) {
@@ -229,9 +228,9 @@ $(document).ready(function () {
         topTop();
     }, 5000);
 
-    $(".brand_back>li").mouseenter(function () {
-        clearInterval(brSlide);
-    });
+    // $(".brand_back>li").mouseenter(function () {
+    //     clearInterval(brSlide);
+    // });
     $(".brand_btn>p").mouseenter(function () {
         clearInterval(brSlide);
     });
